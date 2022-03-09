@@ -31,4 +31,4 @@ teamr = "teamr"  # for random team
 
 # flip a coin
 flip_a_coin_definition = "coin"
-coin = ["tails", "heads"]
+coin = ["Tails", "Heads"]
