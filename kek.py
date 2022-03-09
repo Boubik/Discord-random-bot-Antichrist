@@ -23,6 +23,26 @@ async def on_message(message):
             await message.channel.send(config.yes)
         return
     if message.content[:6].lower() == config.multiDefinition:
+        text = message.content
+        splited = text.split(" ")
+
+        if splited[2] == config.team or splited[2] == config.teamr:
+            if splited[2] == config.teamr:
+                kek = message.content.split(config.teamr+" ")
+            else:
+                kek = message.content.split(config.team+" ")
+            names = kek[1].split(config.separator)
+            if splited[2] == config.teamr:
+                random.shuffle(names)
+            names_len = len(names)
+            for i in range((int(splited[1])-1)):
+                ar = []
+                for k in range(round(names_len/int(splited[1]))):
+                    ar.append(names.pop(0))
+                await message.channel.send(ar)
+
+            await message.channel.send(names)
+            return
         if message.content.lower() == config.easterEgg:
             await message.channel.send(config.easterEggText + ' ' + str(message.author.name) + '!')
             return

@@ -23,3 +23,8 @@ separator = ", "
 # easter egg (default "import random" and "Hiiiiiiiiii")
 easterEgg = "import random"
 easterEggText = "Hiiiiiiiiii"
+
+
+# settings for teams splitter
+team = "team"
+teamr = "teamr"  # for random team
