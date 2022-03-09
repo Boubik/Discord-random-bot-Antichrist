@@ -28,3 +28,7 @@ easterEggText = "Hiiiiiiiiii"
 # settings for teams splitter
 team = "team"
 teamr = "teamr"  # for random team
+
+# flip a coin
+flip_a_coin_definition = "coin"
+coin = ["tails", "heads"]
