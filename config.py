@@ -1,6 +1,8 @@
 # token from discord developer aplication
 token = ""
 
+# channels 
+channels = ["bot-šit", "antichrist"]
 
 # next section
 
@@ -8,7 +10,7 @@ token = ""
 yes = "Yes"
 no = "No"
 
-# if in messige is this sign (at the end of message) then it will return yes or no randomly (default "?")
+# if in the message is this sign (at the end of message) then it will return yes or no randomly (default "?")
 questionDefinition = "?"
 
 

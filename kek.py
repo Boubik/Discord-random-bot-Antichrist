@@ -15,6 +15,8 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
+    if len(config.channels) > 0 and not (message.channel.name in config.channels):
+        return
     if message.content[-1] == config.questionDefinition:
         lol = random.randrange(2)
         if lol == 0:
